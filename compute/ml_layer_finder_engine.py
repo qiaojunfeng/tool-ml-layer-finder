@@ -1,6 +1,7 @@
 import json
 import math
 import time
+from pathlib import Path
 
 import ase
 import ase.io
@@ -381,9 +382,7 @@ def process_structure_core(
 
     ### MOHAMMAD: Load the trained model
 
-    loaded_RF = joblib.load(
-        "/home/app/code/webservice/static/random_forest_model.joblib"
-    )
+    loaded_RF = joblib.load(Path(__file__).parent / "../model/random_forest_model.joblib")
     explainer = shap.Explainer(loaded_RF)
 
     ### MOHAMMAD: make prediction!

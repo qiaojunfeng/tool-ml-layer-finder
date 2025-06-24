@@ -10,8 +10,8 @@ from .utils.response import FlaskRedirectException
 
 # Ignoring the import error because it's from tools-barebone
 # Not ideal, but works for now
-from web_module import get_config  # pylint: disable=import-error
-import header
+# from web_module import get_config  # pylint: disable=import-error
+# import header
 
 VALID_EXAMPLES = {
     "WTe2": "WTe2-02f1827d-f339-436f-baf6-66d1cf142fcf_structure.xsf",
