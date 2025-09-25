@@ -2,3 +2,6 @@ matminer~=0.7.8
 joblib~=1.0.1
 shap~=0.41.0
 numpy<1.24
+ase
+flask
+tools_barebone
